@@ -11,8 +11,8 @@ class StylaUtils{
         if(!$js_url)
                 $js_url = self::STYLA_URL;
 
-        $url = preg_filter('/https?:(.+)/i', '$1', (rtrim($js_url, '/').'/')).'scripts/embed/'.$username.'.js';
-        return '<script id="amazineEmbed" type="text/javascript" src="'.$url.'" defer="defer"></script>';
+        $url = preg_filter('/https?:(.+)/i', '$1', (rtrim($js_url, '/').'/')).'scripts/preloader/'.$username.'.js';
+        return '<script id="amazineEmbed" type="text/javascript" src="'.$url.'"></script>';
     }
 
     public static function getActionFromUrl($basedir = 'magazin'){

@@ -18,7 +18,7 @@ class Shopware_Plugins_Frontend_StylaSEO_Bootstrap extends Shopware_Components_P
 
     public function getVersion()
     {
-        return '1.0.0';
+        return '1.0.1';
     }
 
 
@@ -27,7 +27,7 @@ class Shopware_Plugins_Frontend_StylaSEO_Bootstrap extends Shopware_Components_P
         return array(
             'version' => $this->getVersion(),
             'label' => $this->getLabel(),
-            'author' => 'BSolut GmbH',
+            'author' => 'Styla GmbH',
             'supplier' => 'Styla',
             'description' => 'Generates metadata corresponding to folder structure necessary to support Styla JS embed',
             'copyright' => '',
@@ -53,25 +53,25 @@ class Shopware_Plugins_Frontend_StylaSEO_Bootstrap extends Shopware_Components_P
 
         // Amazine settings
         $form->setElement('text', 'styla_username', array(
-            'label' => 'Amazine/Styla Username',
+            'label' => 'Styla Username',
             'required' => true,
         ));
         $form->setElement('text', 'styla_source_url', array(
-            'label' => 'Styla Magazine Source URL',
+            'label' => 'Styla Magazine Source Domain',
             'required' => true,
-            'value' => 'http://www.amazine.com/',
+            'value' => 'http://live.styla.com/',
             'scope' => \Shopware\Models\Config\Element::SCOPE_SHOP
         ));
         $form->setElement('text', 'styla_js_url', array(
-            'label' => 'Styla JS Snippet URL',
+            'label' => 'Styla JS Snippet Domain',
             'required' => true,
-            'value' => 'http://www.amazine.com/',
+            'value' => 'http://live.styla.com/',
             'scope' => \Shopware\Models\Config\Element::SCOPE_SHOP
         ));
         $form->setElement('text', 'styla_basedir', array(
             'label' => 'Amazine/Styla Base Folder',
             'required' => true,
-            'value' => 'magazin',
+            'value' => 'magazine',
             'scope' => \Shopware\Models\Config\Element::SCOPE_SHOP
         ));
     }

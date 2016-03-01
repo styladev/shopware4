@@ -34,7 +34,7 @@ class Shopware_Controllers_Frontend_Magazin extends Enlight_Controller_Action {
         $ret = null;
 
         if($type != 'search') // for now at least we don't need any metadata coming back for search results
-            $ret = StylaUtils::getRemoteContent($this->_username, $this->_feed_params, $this->_snippet_url);
+            $ret = StylaUtils::getRemoteContent($this->_username, $this->_feed_params, $this->_source_url);
 
         $custom_page = $this->View()->getAssign('sCustomPage');
 

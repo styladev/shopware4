@@ -1,7 +1,6 @@
-# Styla SEO Enhancements Shopware Module (v1.0.0) 
+# Styla SEO Enhancements Shopware Module (v1.0.1) 
 ## Installation How-to
-#### Author: Mark Mulder (BSolut GmbH)
-#### Last updated: 28.01.2016
+#### Last updated: 01.03.2016
 
 --
 ## Install the Plugin 
