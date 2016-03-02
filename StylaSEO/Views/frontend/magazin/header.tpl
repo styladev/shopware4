@@ -12,7 +12,7 @@
         {$sCustomPage.meta_og_image}
         {$sCustomPage.author}
     {/if}
-
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 {/block}
 
 {* Newly added 151008 *}

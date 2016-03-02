@@ -18,9 +18,8 @@ class Shopware_Plugins_Frontend_StylaSEO_Bootstrap extends Shopware_Components_P
 
     public function getVersion()
     {
-        return '1.0.1';
+        return '4.0.0';
     }
-
 
     public function getInfo()
     {
@@ -28,10 +27,10 @@ class Shopware_Plugins_Frontend_StylaSEO_Bootstrap extends Shopware_Components_P
             'version' => $this->getVersion(),
             'label' => $this->getLabel(),
             'author' => 'Styla GmbH',
-            'supplier' => 'Styla',
-            'description' => 'Generates metadata corresponding to folder structure necessary to support Styla JS embed',
+            'supplier' => 'Styla GmbH',
+            'description' => 'Generates magazine wildcart route and product api',
             'copyright' => '',
-            'support' => 'Styla',
+            'support' => 'Styla GmbH',
             'link' => 'http://www.styla.com'
         );
     }
