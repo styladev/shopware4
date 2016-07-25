@@ -10,6 +10,8 @@
         {$sCustomPage.meta_og_title}
         {$sCustomPage.meta_og_type}
         {$sCustomPage.meta_og_image}
+		{if $sCustomPage.meta_og_image_width}<meta property="og:image:width" content="{$sCustomPage.meta_og_image_width}" />{"\n"}{/if}
+		{if $sCustomPage.meta_og_image_height}<meta property="og:image:height" content="{$sCustomPage.meta_og_image_height}" />{/if}
         {$sCustomPage.author}
     {/if}
 		<meta name="viewport" content="width=device-width, initial-scale=1">
