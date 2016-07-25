@@ -63,10 +63,9 @@ class Shopware_Controllers_Frontend_Magazin extends Enlight_Controller_Action {
             if($type == 'story'){
                 $custom_page['meta_keywords'] = $ret['meta']['keywords'];
             }
+	    }
 
-	    $this->View()->assign('sContent', '<noscript>'.$ret['noscript_content'].'</noscript>'."\r\n".$js_include."\r\n".'<div id="stylaMagazine"></div>');
-        }
-
+        $this->View()->assign('sContent', '<noscript>'.$ret['noscript_content'].'</noscript>'."\r\n".$js_include."\r\n".'<div id="stylaMagazine"></div>');
         $this->View()->assign('sCustomPage', $custom_page);
         $this->View()->assign('feed_type', $type);
     }
