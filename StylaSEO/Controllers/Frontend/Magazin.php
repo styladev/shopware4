@@ -50,15 +50,22 @@ class Shopware_Controllers_Frontend_Magazin extends Enlight_Controller_Action {
                 $custom_page['meta_og_url'] = $ret['meta']['og']['url'];
                 $custom_page['meta_fb_app_id'] = $ret['meta']['fb_app_id'];
                 $custom_page['author'] = $ret['author'];
+
+        		if(!empty($ret['meta']['og']['image'])){
+        			$meta = (array) new SimpleXMLElement($ret['meta']['og']['image']);
+        			$attribs = current($meta);
+        			list($width, $height) = getimagesize($attribs['content']);
+        			$custom_page['meta_og_image_width'] = $width;
+        			$custom_page['meta_og_image_height'] = $height;
+        		}
             }
 
             if($type == 'story'){
                 $custom_page['meta_keywords'] = $ret['meta']['keywords'];
             }
+	    }
 
-	    $this->View()->assign('sContent', '<noscript>'.$ret['noscript_content'].'</noscript>'."\r\n".$js_include."\r\n".'<div id="stylaMagazine"></div>');
-        }
-
+        $this->View()->assign('sContent', '<noscript>'.$ret['noscript_content'].'</noscript>'."\r\n".$js_include."\r\n".'<div id="stylaMagazine"></div>');
         $this->View()->assign('sCustomPage', $custom_page);
         $this->View()->assign('feed_type', $type);
     }
