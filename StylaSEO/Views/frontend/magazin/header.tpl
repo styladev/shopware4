@@ -5,7 +5,7 @@
 {*block name='frontend_index_header_meta_tags' append*}
 {block name='frontend_index_header_meta_tags' }
     {if $feed_type == 'user' || $feed_type == 'magazine' || $feed_type == 'story'}
-        {$sCustomPage.meta_description}
+	{if $sCustomPage.meta_description}<meta name="description" property="og:description" content="{$sCustomPage.meta_description}" />{/if}
         {$sCustomPage.meta_fb_app_id}
         {$sCustomPage.meta_og_url}
         {$sCustomPage.meta_og_title}
