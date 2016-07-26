@@ -5,7 +5,7 @@
 {*block name='frontend_index_header_meta_tags' append*}
 {block name='frontend_index_header_meta_tags' }
     {if $feed_type == 'user' || $feed_type == 'magazine' || $feed_type == 'story'}
-	{if $sCustomPage.meta_description}<meta name="description" property="og:description" content="{$sCustomPage.meta_description}" />{/if}
+	{if $sCustomPage.meta_description}<meta name="description" property="og:description" content="{$sCustomPage.meta_description}" />{"\n"}<meta property="twitter:description" content="{$sCustomPage.meta_description}" />{"\n"}{/if}
         {$sCustomPage.meta_fb_app_id}
         {$sCustomPage.meta_og_url}
         {$sCustomPage.meta_og_title}
