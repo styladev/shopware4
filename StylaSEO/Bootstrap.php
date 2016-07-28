@@ -90,11 +90,12 @@ class Shopware_Plugins_Frontend_StylaSEO_Bootstrap extends Shopware_Components_P
     public function onPreDispatch(Enlight_Controller_EventArgs $args){
 
         $request  = $args->getRequest();
+        $url = strtok($request->getRequestUri(),'?');
 
         $this->_styla_username = $this->Config()->get('styla_username');
         $this->_magazin_basedir = $this->Config()->get('styla_basedir', 'magazin');
 
-        if( ($request->getRequestUri() == '/'.$this->_magazin_basedir || strpos($request->getRequestUri(), '/'.$this->_magazin_basedir.'/') !== false) ) {
+        if ($url == '/'.$this->_magazin_basedir || strpos($url, '/'.$this->_magazin_basedir.'/') !== false){
 		    $controller	= 'magazin';
         } else if( ($request->getRequestUri() == '/stylaapi' || strpos($request->getRequestUri(), '/stylaapi/') !== false) ) {
 		    $controller	= 'stylaapi';
