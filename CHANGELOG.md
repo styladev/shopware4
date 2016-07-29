@@ -1,4 +1,7 @@
-### v4.0.2 2016-07-04 
+### v4.0.3 2016-07-29 
+* Allow query parameters on magazine pages
+
+### v4.0.2 2016-07-26 
 * Added og:image width and height
 * Added description, og:description and twitter:description
 
