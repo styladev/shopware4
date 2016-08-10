@@ -2,7 +2,7 @@
 
 {block name='frontend_index_header_canonical'}{$sCustomPage.canonical_link}{/block}
 
-{block name='frontend_index_header_meta_tags_opengraph'}
+{block name='frontend_index_header_meta_tags' append}
 	{if $feed_type == 'user' || $feed_type == 'magazine' || $feed_type == 'story'}
 		{$sCustomPage.meta_fb_app_id}
 		{$sCustomPage.meta_og_url}
@@ -14,6 +14,8 @@
 		{$sCustomPage.author}
 	{/if}
 {/block}
+
+{if $sCustomPage.meta_description}{block name='frontend_index_header_meta_description'}{$sCustomPage.meta_description}{/block}{/if}
 
 {if $sCustomPage.meta_keywords}{block name='frontend_index_header_meta_keywords'}{$sCustomPage.meta_keywords}{/block}{/if}
 
