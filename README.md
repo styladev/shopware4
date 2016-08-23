@@ -1,4 +1,4 @@
-# Styla SEO Enhancements Shopware Module (v4.0.3) 
+# Styla SEO Enhancements Shopware Module (v4.0.4) 
 ## Installation How-to
 #### Last updated: 29.08.2016
 
