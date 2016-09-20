@@ -1,31 +1,28 @@
-# Styla SEO Enhancements Shopware Module (v4.0.5) 
+# Styla SEO Enhancements Shopware Module (v4.1.0)
 ## Installation How-to
-#### Last updated: 23.08.2016
+#### Last updated: 20.09.2016
+#### Contributors: Sebastian Sachtleben, Christian Korndoerfer
 
---
-## Install the Plugin 
-1. Place the *StylaSEO* folder at the following location of your Shopware installaton: engine/Shopware/Plugins/Local/Frontend
-2. Once the code is in place, access your Shopware administration page. The Styla SEO Enhancements Shopware module can be configured and activated under **Configuration -> Plugin Manager -> Installed**.
-3. Click on the Pencil (edit) icon to edit the plugin settings. 
-4. Enter your username at **Styla Username**
-5. If you do not wish to use /magazine as your base folder for displaying the Styla content, please enter a new path under **Styla Base Folder** (IMPORTANT: please coordinate changes here with Styla, since the path has to be configured there as well).
-6. If everything is working, the pages will be accessible at:
-   
-    - **http://[yourwebsite.com]/magazine/**
-    
-    - **http://[yourwebsite.com]/magazine/tag/[tagname]**
-    
-    - **http://[yourwebsite.com]/magazine/story/[storyname]**
-    
-    - **http://[yourwebsite.com]/magazine/user/[username]**
+---
 
-    - **http://[yourwebsite.com]/magazine/search/[searchterm]**
-    
-    
-## Update the Plugin 
-1. Place the *StylaSEO* folder at the following location of your Shopware installaton: engine/Shopware/Plugins/Local/Frontend
-2. Once the code is in place, access your Shopware administration page. The Styla SEO Enhancements Shopware module can be configured and activated under **Configuration -> Plugin Manager -> Installed**.
-3. Click on the Pencil (edit) icon to edit the plugin settings. 
-4. Press reinstall 
-5. Enter your username at **Styla Username** and adjust the **Styla Base Folder** again
-6. Click **Configuration -> Cache/performance -> clear shop cache**
+- Place the *StylaSEO* folder at the following location of your Shopware installaton: engine/Shopware/Plugins/Local/Frontend
+- Once the code is in place, access your Shopware administration page. The Styla SEO Enhancements Shopware module can be configured and activated under **Configuration -> Plugin Manager -> Local Extensions**.
+- Click on the Pencil (edit) icon to edit the plugin settings:
+    - **Styla Magazine ID**: Your Styla username which is provided to you by your Styla account manager.
+    - **Styla SEO Server URL** _(default: http://seo.styla.com/)_: Server that provides SEO information for your magazine content. (**IMPORTANT:** Do not modify this unless approved by Styla)
+    - **Styla API Server URL** _(default: http://live.styla.com/)_: Server that provided the necessary scripts and styles for your magazine. (**IMPORTANT:** Do not modify this unless approved by Styla)
+    - **Styla Base Folder** _(default: magazine)_: Path to your main magazine page. Your magazine will become available at `/[Styla Base Folder]` (e.g. `/magazine`). (**IMPORTANT:** Before changing, make sure to contact you account manager and provide him/her the new magazine path)
+
+If everything is set up correctly the following pages will be accessible:
+
+    - **Main magazine:** http://[yourwebsite.com]/[Styla Base Folder]/
+    - **Tag:** http://[yourwebsite.com]/[Styla Base Folder]/tag/[tagname]
+    - **Category:** mhttp://[yourwebsite.com]/[Styla Base Folder]/user/[Styla Magazine ID]/category/[category]
+    - **Story:** http://[yourwebsite.com]/[Styla Base Folder]/story/[storyname]
+    - **Search:** http://[yourwebsite.com]/[Styla Base Folder]/search/[searchterm]
+
+## Update the Plugin
+- Place the *StylaSEO* folder at the following location of your Shopware installation: `engine/Shopware/Plugins/Local/Frontend`
+- Once the code is in place, access your Shopware administration page. The Styla SEO Enhancements Shopware module can be configured and activated under **Configuration -> Plugin Manager -> Local Extensions**.
+- Click on the Update icon in the "actions" column of the plugin.
+- Click **Configuration -> Cache/performance -> clear shop cache**
