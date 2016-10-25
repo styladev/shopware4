@@ -18,7 +18,7 @@ class Shopware_Plugins_Frontend_StylaSEO_Bootstrap extends Shopware_Components_P
 
     public function getVersion()
     {
-        return '4.1.0';
+        return '4.2.0';
     }
 
     public function getInfo()
