@@ -1,9 +1,9 @@
 # Styla SEO Enhancements Shopware Module (v4.1.0)
 ## Installation How-to
-#### Last updated: 20.09.2016
-#### Contributors: Sebastian Sachtleben, Christian Korndoerfer
+#### Last updated: 24.10.2016
+#### Contributors: Sebastian Sachtleben, Christian Korndoerfer, Roberto Solís
 
----
+--
 
 - Place the *StylaSEO* folder at the following location of your Shopware installaton: engine/Shopware/Plugins/Local/Frontend
 - Once the code is in place, access your Shopware administration page. The Styla SEO Enhancements Shopware module can be configured and activated under **Configuration -> Plugin Manager -> Local Extensions**.
