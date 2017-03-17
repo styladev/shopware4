@@ -1,6 +1,6 @@
 # Styla SEO Enhancements Shopware Module (v4.2.0)
 ## Installation How-to
-#### Last updated: 24.10.2016
+#### Last updated: 16.03.2017
 #### Contributors: Sebastian Sachtleben, Christian Korndoerfer, Roberto Solís
 
 --
