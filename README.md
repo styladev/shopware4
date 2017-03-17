@@ -17,7 +17,7 @@ If everything is set up correctly the following pages will be accessible:
 
     - **Main magazine:** http://[yourwebsite.com]/[Styla Base Folder]/
     - **Tag:** http://[yourwebsite.com]/[Styla Base Folder]/tag/[tagname]
-    - **Category:** mhttp://[yourwebsite.com]/[Styla Base Folder]/user/[Styla Magazine ID]/category/[category]
+    - **Category:** http://[yourwebsite.com]/[Styla Base Folder]/user/[Styla Magazine ID]/category/[category]
     - **Story:** http://[yourwebsite.com]/[Styla Base Folder]/story/[storyname]
     - **Search:** http://[yourwebsite.com]/[Styla Base Folder]/search/[searchterm]
 
