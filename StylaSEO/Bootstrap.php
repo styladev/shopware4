@@ -13,12 +13,12 @@ class Shopware_Plugins_Frontend_StylaSEO_Bootstrap extends Shopware_Components_P
 
     public function getLabel()
     {
-        return 'Styla SEO Enhancements';
+        return 'Styla Magazine Plugin';
     }
 
     public function getVersion()
     {
-        return '4.1.0';
+        return '4.2.1';
     }
 
     public function getInfo()
