@@ -1,7 +1,7 @@
-# Styla SEO Enhancements Shopware Module (v4.2.0)
+# Styla SEO Enhancements Shopware Module (v4.2.2)
 
-#### Last updated: 16.03.2017
-#### Contributors: Sebastian Sachtleben, Christian Korndoerfer, Roberto Solís
+#### Last updated: 21.04.2017
+#### Contributors: Sebastian Sachtleben, Christian Korndoerfer, Roberto Solís, Antonio Cosentino
 
 Styla Connect is a module to connect your Shopware 4 Store with [Styla](http://www.styla.com/). For our Shopware 5 plugin check this https://github.com/styladev/shopware5
 
@@ -33,6 +33,6 @@ If everything is set up correctly the following pages will be accessible:
 
 ## Update the Plugin
 - Place the *StylaSEO* folder at the following location of your Shopware installation: `engine/Shopware/Plugins/Local/Frontend`
-- Once the code is in place, access your Shopware administration page. The Styla SEO Enhancements Shopware module can be configured and activated under **Configuration -> Plugin Manager -> Local Extensions**.
+- Once the code is in place, access your Shopware administration page. The Styla Magazine Plugin can be configured and activated under **Configuration -> Plugin Manager -> Local Extensions**.
 - Click on the Update icon in the "actions" column of the plugin.
 - Click **Configuration -> Cache/performance -> clear shop cache**
