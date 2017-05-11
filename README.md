@@ -11,6 +11,8 @@ The first diagram on [this page](https://styladocs.atlassian.net/wiki/spaces/CO/
 
 Shopware version 4.3.1 or later
 
+There have been issues with PHP 7 in the past. Should you have some, please report back to us. The plugin works best on PHP 5.6.
+
 ## Installation How-to
 
 - Place the *StylaSEO* folder at the following location of your Shopware installaton: engine/Shopware/Plugins/Local/Frontend
