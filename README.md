@@ -1,6 +1,6 @@
-# Styla SEO Enhancements Shopware Module (v4.2.2)
+# Styla SEO Enhancements Shopware Module (v4.2.3)
 
-#### Last updated: 28.04.2017
+#### Last updated: 31.05.2017
 #### Contributors: Sebastian Sachtleben, Christian Korndoerfer, Roberto Solís, Antonio Cosentino
 
 Styla Connect is a module to connect your Shopware 4 Store with [Styla](http://www.styla.com/). For our Shopware 5 plugin check this https://github.com/styladev/shopware5
