@@ -1,3 +1,8 @@
+### v4.2.2 2017-05-02
+* Added support for the "sales/abverkauf" checkbox in the inventory so that saleable/not saleable logic in magazine works same as in Shopware
+* Fixed bug on version prices so that now prices per size/colour variant are updated correctly on the "add to cart" overlay in magazine
+* Added VAT calculation for the variant prices so that VAT is always included
+
 ### v4.2.0 2016-10-24
 * Added SEO Pagination
 * Added SEO Status Code

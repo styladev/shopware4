@@ -1,11 +1,17 @@
 # Styla SEO Enhancements Shopware Module (v4.2.2)
 
-#### Last updated: 21.04.2017
+#### Last updated: 28.04.2017
 #### Contributors: Sebastian Sachtleben, Christian Korndoerfer, Roberto Solís, Antonio Cosentino
 
 Styla Connect is a module to connect your Shopware 4 Store with [Styla](http://www.styla.com/). For our Shopware 5 plugin check this https://github.com/styladev/shopware5
 
 The first diagram on [this page](https://styladocs.atlassian.net/wiki/spaces/CO/pages/9961481/Technical+Integration) should provide you an overview of what the plugin does and how it exchanges data with Styla. 
+
+## Requirements
+
+Shopware version 4.3.1 or later
+
+There have been issues with PHP 7 in the past. Should you have some, please report back to us. The plugin works best on PHP 5.6.
 
 ## Installation How-to
 
