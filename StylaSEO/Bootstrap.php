@@ -81,6 +81,7 @@ class Shopware_Plugins_Frontend_StylaSEO_Bootstrap extends Shopware_Components_P
         $this->subscribeEvent('Enlight_Controller_Front_PostDispatch', 'onPostDispatch');
         $this->subscribeEvent('Enlight_Controller_Dispatcher_ControllerPath_Frontend_Magazin', 'onGetControllerPathFrontend');
 	    $this->subscribeEvent('Enlight_Controller_Dispatcher_ControllerPath_Frontend_StylaApi', 'onGetControllerPathFrontend');
+        $this->subscribeEvent('Enlight_Controller_Dispatcher_ControllerPath_Frontend_StylaPluginVersion', 'onGetControllerPathFrontend');
 
         return array(
             'success' => true,
@@ -97,10 +98,15 @@ class Shopware_Plugins_Frontend_StylaSEO_Bootstrap extends Shopware_Components_P
         $this->_magazin_basedir = $this->Config()->get('styla_basedir', 'magazine');
 
         if ($url == '/'.$this->_magazin_basedir || strpos($url, '/'.$this->_magazin_basedir.'/') !== false){
-		    $controller	= 'magazin';
-        } else if( ($request->getRequestUri() == '/stylaapi' || strpos($request->getRequestUri(), '/stylaapi/') !== false) ) {
-		    $controller	= 'stylaapi';
-	    } else {
+            $controller = 'magazin';
+        } 
+        else if($request->getRequestUri() == '/styla-plugin-version' || strpos($request->getRequestUri(), '/styla-plugin-version/') !== false) {
+            $controller = 'stylapluginversion';
+        } 
+        else if($request->getRequestUri() == '/stylaapi' || strpos($request->getRequestUri(), '/stylaapi/') !== false) {
+            $controller = 'stylaapi';
+        }  
+        else {
             return;
         }
 
@@ -135,7 +141,10 @@ class Shopware_Plugins_Frontend_StylaSEO_Bootstrap extends Shopware_Components_P
         if ($url == '/'.$this->_magazin_basedir || strpos($url, '/'.$this->_magazin_basedir.'/') !== false){
             return $this->Path() . 'Controllers/Frontend/Magazin.php';
         }
-	    else{
+        else if ($url == '/styla-plugin-version' || strpos($url, '/styla-plugin-version/') !== false) {
+            return $this->Path() . 'Controllers/Frontend/StylaPluginVersion.php';
+        }
+        else {
             return $this->Path() . 'Controllers/Frontend/StylaApi.php';
         }
     }
