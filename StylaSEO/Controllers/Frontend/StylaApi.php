@@ -69,7 +69,7 @@ class Shopware_Controllers_Frontend_StylaApi extends Shopware_Controllers_Fronte
         $limit = $this->Request()->getParam('limit', 1000);
         $offset = $this->Request()->getParam('offset', 0);
         $sort = $this->Request()->getParam('sort', array());
-        //$filter = $this->Request()->getParam('filter', array());
+        $filter = $this->Request()->getParam('filter', array());
         $categoryId = $this->Request()->getParam('category', '');
         $search = $this->Request()->getParam('search', '');
 
