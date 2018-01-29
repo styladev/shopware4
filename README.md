@@ -19,8 +19,8 @@ There have been issues with PHP 7 in the past. Should you have some, please repo
 - Once the code is in place, access your Shopware administration page. The Styla SEO Enhancements Shopware module can be configured and activated under **Configuration -> Plugin Manager -> Local Extensions**.
 - Click on the Pencil (edit) icon to edit the plugin settings:
     - **Styla Magazine ID**: Your Styla username which is provided to you by your Styla account manager.
-    - **Styla SEO Server URL** _(default: http://seo.styla.com/)_: Server that provides SEO information for your magazine content. (**IMPORTANT:** Do not modify this unless approved by Styla)
-    - **Styla API Server URL** _(default: http://live.styla.com/)_: Server that provided the necessary scripts and styles for your magazine. (**IMPORTANT:** Do not modify this unless approved by Styla)
+    - **Styla SEO Server URL** _(default: https://seoapi.styla.com)_: Server that provides SEO information for your magazine content. (**IMPORTANT:** Do not modify this unless approved by Styla)
+    - **Styla API Server URL** _(default: https://client-scripts.styla.com)_: Server that provided the necessary scripts and styles for your magazine. (**IMPORTANT:** Do not modify this unless approved by Styla)
     - **Styla Base Folder** _(default: magazine)_: Path to your main magazine page. Your magazine will become available at `/[Styla Base Folder]` (e.g. `/magazine`). (**IMPORTANT:** Before changing, make sure to contact you account manager and provide him/her the new magazine path)
 - Once all done, clear Shopware cache
 
