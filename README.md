@@ -34,6 +34,18 @@ If everything is set up correctly the following pages will be accessible:
 
 ### Please do not create any subpages in your CMS or directories for your magazine. The plugin itself will take care of setting up the /magazine/ (or any other) page on which the magazine will appear and of the routing as well. 
 
+## SEO Content from Styla's SEO API
+
+The module uses data from Styla's SEO API to:
+* generate tags like: meta tags including `<title>`, canonical link, og:tags, static content inserted into <body>, `robots` instructions
+* insert these tags accordingly into HTML of the template the page with Styla content uses
+  
+This is done to provide search engine bots with data to crawl and index all Styal URLs, which are in fact a Single-Page-Application.
+
+Once you install and configure the module, please open source of the page on which your Styla content is embedded and check if none of the tags mentioned below are duplicated. In case `robots`or `link rel="canonical"` or any other are in the HTML twice, make sure to remove the original ones coming from your default template. Otherwise search engine bots might not be able to crawl all the Styla content or crawl it incorrectly. 
+
+You can finde more information on the SEO API on [this page](https://styladocs.atlassian.net/wiki/spaces/CO/pages/9961486/SEO+API+and+Sitemaps+Integration)
+
 ## Update the Plugin
 - Place the *StylaSEO* folder at the following location of your Shopware installation: `engine/Shopware/Plugins/Local/Frontend`
 - Once the code is in place, access your Shopware administration page. The Styla Magazine Plugin can be configured and activated under **Configuration -> Plugin Manager -> Local Extensions**.
